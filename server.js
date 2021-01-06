@@ -2,7 +2,7 @@ const express   = require('express');
 const puppeteer = require('puppeteer');
 const morgan    = require('morgan');
 const app       = express();
-const PORT      = process.env.PORT || 8084
+const PORT      = process.env.APP_PORT || 8084
 
 app.use(morgan('combined'));
 app.listen(PORT);
